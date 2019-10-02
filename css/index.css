@@ -23,3 +23,13 @@ h1{
   color:white;
   font-family: 'Cinzel', serif;
 }
+ul{
+  float:right;
+  padding-top:20px;
+}
+a{
+  font-size:25px;
+  color:white;
+  padding:7px;
+  text-decoration:none;
+}
