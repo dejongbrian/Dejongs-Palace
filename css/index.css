@@ -1,0 +1,14 @@
+body{
+  background-image: url("https://t3.ftcdn.net/jpg/01/99/10/44/240_F_199104456_hGSpXtSlQW4u2kk2YNUOzuvieua68wrf.jpg"); 
+  background-size: cover; 
+}
+
+h1{
+  padding-top: 190px;
+}
+
+.dejong{
+  font-size:5em;
+  color:white;
+  font-family: 'Cinzel', serif;
+}
