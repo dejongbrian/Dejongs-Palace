@@ -15,7 +15,8 @@
   <title>Dejongs'</title>
 </head>
 <body>
-  <body class="bod" background=https://t3.ftcdn.net/jpg/01/99/10/44/240_F_199104456_hGSpXtSlQW4u2kk2YNUOzuvieua68wrf.jpg>
+  <body class="bod">
+   <div id="dj">
     <div>
         <nav id="nav">
             <ul class="glass">
@@ -26,15 +27,13 @@
             </ul>
         </nav>
     </div>
-
-  <div class="logo"><img src="images/logo.png"  ></div>
-  <div class="container"   >
-    <h1 class="dejong">Dejongs' Palace</h1>
-    <p class="intro"><em>Welcome to  Dejongs' Palace. We offer a wide range of Pizza to meet your needs. We are open late and deliver up to a 10 mile radius.</em></p>
-  </div>
-  </body>
-
-  <div id="menu">  
+    <div>
+      <div class="logo"><img src="images/logo.png"  ></div>
+          <h1 class="dejong"><b>Dejongs' Palace</b></h1>
+          <p class="intro"><em>Welcome to  Dejongs' Palace. We offer a wide range of Pizza to meet your needs. We are open late and deliver up to a 10 mile radius.</em></p>
+      </div>
+    
+      <div id="menu">  
       <div class="abt">
         <h2><b>Menu</b></h2>
        
@@ -153,6 +152,47 @@
   </div>
  
       </div>
+    </div>
+
+    <div id="order">
+      <p class="ord"><b>Place your order below</b></p>
+       
+          <form onsubmit="event.preventDefault()">
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label class="r">TOPPINGS</label><br>
+                  <div >
+                  <select class="form-control" id="real">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                    </div>
+                <div class="form-group col-md-4">
+                  <label class="r">SIZE</label><br>
+                  <select class="form-control" id="real">
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                      <option>X-Large</option>
+                    </select><br>
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="r">CRUST</label><br>
+                  <select class="form-control" id="real">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select><br>
+                </div>
+                </form>
+            </div>
+             <p id="show"></p>
     </div>
   
 </body>

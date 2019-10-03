@@ -1,20 +1,26 @@
-.bod{
-  background-image: url("https://t3.ftcdn.net/jpg/01/99/10/44/240_F_199104456_hGSpXtSlQW4u2kk2YNUOzuvieua68wrf.jpg"); 
-  background-size: cover; 
+*{
+  padding:0;
+  margin:0;
 }
 
+#dj{
+  background-size: cover;
+  height: 100vh;
+  background-image: url("https://t3.ftcdn.net/jpg/01/99/10/44/240_F_199104456_hGSpXtSlQW4u2kk2YNUOzuvieua68wrf.jpg");
+}
 
 .logo{
   padding-left:40px;
   padding-top:20px;
 }
 h1{
-  padding-top: 190px;
+  padding-top: 180px;
 }
 .intro{
   padding-top:320px;
+  text-align: center;
   color:white;
-  font-size:16px;
+  font-size:20px;
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -39,4 +45,11 @@ h2{
 }
 #menu{
      background-color: white;
+}
+.ord{
+  text-align: center;
+}
+.r{
+  padding-left: 200px;
+  color:white;
 }
