@@ -38,25 +38,38 @@ a{
   color:white;
   padding:7px;
   text-decoration:none;
+  font-family: 'Cinzel', serif;
 }
 h2{
   text-align: center;
-  padding-top:
+  font-family: 'Cinzel', serif;
 }
 #menu{
      background-color: white;
+}
+h3{
+  font-family: 'Cinzel', serif;
 }
 .o{
   text-align: center;
   font-size:2em;
   padding: 50px;
+  font-family: 'Cinzel', serif;
 }
 .ord{
   text-align: center;
   padding:20px;
+  font-family: 'Cinzel', serif;
 }
 .r{
   padding-left: 200px;
   color:rgb(160, 8, 8);
-  margin:10px;1
+  margin:10px;
+  font-family: 'Cinzel', serif;
+}
+#contacts{
+  font-family: 'Cinzel', serif;
+}
+.select{
+  font-family: 'Cinzel', serif;   
 }
