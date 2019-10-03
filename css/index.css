@@ -49,11 +49,14 @@ h2{
 .o{
   text-align: center;
   font-size:2em;
+  padding: 50px;
 }
 .ord{
   text-align: center;
+  padding:20px;
 }
 .r{
   padding-left: 200px;
-  color:white;
+  color:rgb(160, 8, 8);
+  margin:10px;
 }
