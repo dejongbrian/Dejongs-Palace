@@ -70,7 +70,8 @@ h3{
 #bttn{
   font-family: 'Cinzel', serif;
   text-align: center;
-  padding-left: 400px;
+  padding-left: 520px;
+  
 }
  #b{
   background-color:rgb(160, 8, 8);
@@ -90,12 +91,19 @@ h3{
 #quant{
   padding-left:90px;
 }
+#amnt{
+  text-align: center;
+  padding-left: 300px;
+}
+h5{
+  padding:30px;
+}
 #contacts{
   color:rgb(160, 8, 8);
   font-family: 'Cinzel', serif;
   text-align: center;
   padding:30px;
-  padding-top:200px;
+  padding-top:230px;
 }
 .select{
   font-family: 'Cinzel', serif;   
