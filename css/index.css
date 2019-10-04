@@ -107,7 +107,13 @@ h5{
   font-family: 'Cinzel', serif;
   text-align: center;
   padding:30px;
-  padding-top:230px;
+  padding-top:100px;
+}
+.comment{
+  width:45vh;
+  height:30vh;
+  border-width:thin;
+  /* border: 2px solid rgb(160, 8, 8); */
 }
 .select{
   font-family: 'Cinzel', serif;   
