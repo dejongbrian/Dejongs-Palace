@@ -65,7 +65,7 @@ h3{
   font-family: 'Cinzel', serif;
 }
 #order{
-  padding:30px;
+  padding:25px;
 }
 #bttn{
   font-family: 'Cinzel', serif;
@@ -97,7 +97,7 @@ h3{
   margin:20px;
 }
 h5{
-  padding:30px;
+  padding:20px;
 }
 #tot{
   padding-right: 500px;
@@ -106,12 +106,12 @@ h5{
   color:rgb(160, 8, 8);
   font-family: 'Cinzel', serif;
   text-align: center;
-  padding:30px;
-  padding-top:100px;
+  padding:20px;
+  padding-top:160px;
 }
 .comment{
   width:45vh;
-  height:30vh;
+  height:18vh;
   border-width:thin;
   /* border: 2px solid rgb(160, 8, 8); */
 }
@@ -148,4 +148,5 @@ h5{
 .footer{
   background-color:rgb(160, 8, 8); 
   text-align: center;
+  opacity:0.7;
 }
