@@ -45,21 +45,28 @@ h2{
   font-family: 'Cinzel', serif;
 }
 #menu{
+     color:rgb(160, 8, 8);
      background-color: white;
 }
 h3{
   font-family: 'Cinzel', serif;
 }
 .o{
+  color:rgb(160, 8, 8);
   text-align: center;
   font-size:2em;
   padding: 50px;
   font-family: 'Cinzel', serif;
 }
 .ord{
+  color:rgb(160, 8, 8);
   text-align: center;
   padding:20px;
   font-family: 'Cinzel', serif;
+}
+#bttn{
+  font-family: 'Cinzel', serif;
+  text-align: center;
 }
 .r{
   padding-left: 200px;
@@ -68,7 +75,9 @@ h3{
   font-family: 'Cinzel', serif;
 }
 #contacts{
+  color:rgb(160, 8, 8);
   font-family: 'Cinzel', serif;
+  text-align: center;
 }
 .select{
   font-family: 'Cinzel', serif;   
