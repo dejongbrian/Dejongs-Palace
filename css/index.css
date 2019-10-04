@@ -9,7 +9,7 @@
   background-image: url("https://t3.ftcdn.net/jpg/01/99/10/44/240_F_199104456_hGSpXtSlQW4u2kk2YNUOzuvieua68wrf.jpg");
 }
 
-.logo{
+#logo{
   padding-left:40px;
   padding-top:20px;
 }
@@ -144,4 +144,8 @@ h5{
   margin: 5px 2px;
   border-radius:50%;
   
+}
+.footer{
+  background-color:rgb(160, 8, 8); 
+  text-align: center;
 }
