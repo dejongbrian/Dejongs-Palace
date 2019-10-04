@@ -67,6 +67,15 @@ h3{
 #bttn{
   font-family: 'Cinzel', serif;
   text-align: center;
+  padding-left: 589px;
+}
+ #b{
+  background-color:rgb(160, 8, 8);
+  color:white;
+} 
+#button{
+  background-color:rgb(160, 8, 8);
+  color:white;
 }
 .r{
   padding-left: 200px;
