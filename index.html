@@ -180,7 +180,7 @@
             <div class="form-group col-md-4">
               <label class="r">TOPPINGS</label><br>
               <div>
-                <select class="form-control" data-dropup-auto="false">
+                <select class="form-control" data-dropup-auto="false" id="topp">
                   <option>Topping</option>
                   <option name="topping" value="100" class="topping">Mushrooms</option>
                   <option name="topping" value="100" class="topping">Pineapple</option>
@@ -193,23 +193,23 @@
             </div>
             <div class="form-group col-md-4">
               <label class="r" id="size">SIZE</label><br>
-              <select class="form-control" data-dropup-auto="false">
+              <select class="form-control" data-dropup-auto="false" id="size">
                 <option name="size" class="size" >Size</option>
-                <option name="size" class="size" value="500">Small</option>
-                <option name="size" class="size" value="850">Medium</option>
-                <option name="size" class="size" value="1000">Large</option>
-                <option name="size" class="size" value="1250">X-Large</option>
+                <option name="size" class="size" value="small">Small</option>
+                <option name="size" class="size" value="medium">Medium</option>
+                <option name="size" class="size" value="large">Large</option>
+                <option name="size" class="size" value="X-large">X-Large</option>
               </select><br>
             </div>
             <div class="form-group col-md-4">
               <label class="r">CRUST</label><br>
-              <select class="form-control" data-dropup-auto="false">
+              <select class="form-control" data-dropup-auto="false" id="crust">
                 <option class="select">Crust</option>
-                <option name="crust" class="crust" value="150">Thin & Crispy. Kshs:150</option>
-                <option name="crust" class="crust" value="170">Deep Pan. Kshs:170</option>
-                <option name="crust" class="crust" value="100">Classic Crust. Kshs:100</option>
-                <option name="crust" class="crust" value="200">Cheesy Crust. Kshs:200</option>
-                <option name="crust" class="crust" value="150">Gluten free base. Kshs:150</option>
+                <option name="crust" class="crust" value="thin & crispy">Thin & Crispy. Kshs:150</option>
+                <option name="crust" class="crust" value="deep pan">Deep Pan. Kshs:170</option>
+                <option name="crust" class="crust" value="classic crust">Classic Crust. Kshs:100</option>
+                <option name="crust" class="crust" value="cheesy crust">Cheesy Crust. Kshs:200</option>
+                <option name="crust" class="crust" value="gluten free base">Gluten free base. Kshs:150</option>
               </select><br>
             </div>
            
@@ -230,7 +230,7 @@
           <div class="row" id="bttn" >
             <div class=" form-group col-md-4">
                 <div class="caption">
-              <button type="button" class="btn btn-primary" id="b"  onclick="order()">Order</button>
+              <button type="button" class="btn btn-primary" id="order"  onclick="order()">Order</button>
             </div> </div>
            
           </form>
