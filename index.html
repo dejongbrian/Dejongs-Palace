@@ -21,7 +21,8 @@
 <body>
 
   
-    <div id="dj">
+    <div id="container">
+      <div id="dj">
       <div>
         <nav id="nav">
           <ul class="glass">
@@ -37,6 +38,7 @@
         <h1 class="dejong"><b>Dejongs' Palace</b></h1>
         <p class="intro"><em>Welcome to Dejongs' Palace. We offer a wide range of Pizza to meet your needs. We are open
             late and deliver up to a 10 mile radius.</em></p>
+      </div>
       </div>
 
       <div id="menu">
@@ -173,66 +175,65 @@
 
         <p class="ord"><b>Place your order below</b></p>
 
-        <form onsubmit="event.preventDefault()">
+        <form  action="" id="food" onsubmit="event.preventDefault()">
           <div class="row">
             <div class="form-group col-md-4">
               <label class="r">TOPPINGS</label><br>
               <div>
                 <select class="form-control" data-dropup-auto="false">
                   <option>Topping</option>
-                  <option name="topping" value="100" class="select">Mushrooms</option>
-                  <option name="topping" value="100" class="select">Pineapple</option>
-                  <option name="topping" value="100" class="select">Olives</option>
-                  <option name="topping" value="100" class="select">Bell Papers</option>
-                  <option name="topping" value="100" class="select">Ham</option>
-                  <option name="topping" value="100" class="select">Chicken Pieces</option>
+                  <option name="topping" value="100" class="topping">Mushrooms</option>
+                  <option name="topping" value="100" class="topping">Pineapple</option>
+                  <option name="topping" value="100" class="topping">Olives</option>
+                  <option name="topping" value="100" class="topping">Bell Peppers</option>
+                  <option name="topping" value="100" class="topping">Ham</option>
+                  <option name="topping" value="100" class="topping">Chicken Pieces</option>
                 </select>
               </div>
             </div>
             <div class="form-group col-md-4">
-              <label class="r">SIZE</label><br>
+              <label class="r" id="size">SIZE</label><br>
               <select class="form-control" data-dropup-auto="false">
-                <option class="select">Size</option>
-                <option class="select">Small</option>
-                <option class="select">Medium</option>
-                <option class="select">Large</option>
-                <option class="select">X-Large</option>
+                <option name="size" class="size" >Size</option>
+                <option name="size" class="size" value="500">Small</option>
+                <option name="size" class="size" value="850">Medium</option>
+                <option name="size" class="size" value="1000">Large</option>
+                <option name="size" class="size" value="1250">X-Large</option>
               </select><br>
             </div>
             <div class="form-group col-md-4">
               <label class="r">CRUST</label><br>
               <select class="form-control" data-dropup-auto="false">
                 <option class="select">Crust</option>
-                <option class="select">THIN 'N' CRISPY. Kshs:150</option>
-                <option class="select">DEEP PAN. Kshs:170</option>
-                <option class="select">CLASSIC CRUST. Kshs:100</option>
-                <option class="select">CHEESY CRUST. Kshs:200</option>
-                <option class="select">GLUTEN FREE BASE. Kshs:150</option>
+                <option name="crust" class="crust" value="150">Thin & Crispy. Kshs:150</option>
+                <option name="crust" class="crust" value="170">Deep Pan. Kshs:170</option>
+                <option name="crust" class="crust" value="100">Classic Crust. Kshs:100</option>
+                <option name="crust" class="crust" value="200">Cheesy Crust. Kshs:200</option>
+                <option name="crust" class="crust" value="150">Gluten free base. Kshs:150</option>
               </select><br>
             </div>
-            <div class="row" id="amnt">
-            <div class="form-group col-md-4" id="quant">
-                <label for="quantity" class="r">Quantity</label>
-                <input  class="form-control-lg" id="amount" placeholder="Enter number">
-              </div>
-              <div class="form-group col-md-4">
-                  <label for="total" class="r" id="tot">Total</label>
-                  <input  class="form-control-lg" id="total" disabled>
-                </div>
-              </div>
+           
            </form>
-        
+           <form>
+              <div class="row" id="amnt">
+                  <div class="form-group col-md-4" id="quantity">
+                      <label for="quantity" class="r">Quantity</label>
+                      <input  class="form-control-lg" id="amount" placeholder="Enter number">
+                    </div>
+                    
+                    </div>
+           </form>
+
+
+          
+         <form>
           <div class="row" id="bttn" >
             <div class=" form-group col-md-4">
                 <div class="caption">
-              <button type="button" class="btn btn-primary" id="b" >Order</button>
+              <button type="button" class="btn btn-primary" id="b"  onclick="order()">Order</button>
             </div> </div>
-            <div class="form-group col-md-4">
-              <button type="button" class="btn btn-primary" id="b">Another Order</button>
-            </div>
-            <div class="form-group col-md-4">
-              <button type="button" class="btn btn-primary" id="b">Start</button>
-            </div>
+           
+          </form>
          
         </div>
         <p id="show"></p>
@@ -283,7 +284,7 @@
           <a href="#logo"><img src="images/mouse_click.png" class="image" id="mouse"></a>
         </div>
      </div>
-
+    </div>
   </body>
 
 </html>
