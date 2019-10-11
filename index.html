@@ -12,9 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="js/script.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  
   <title>Dejongs'</title>
 </head>
 
@@ -179,38 +177,48 @@
           <div class="row">
             <div class="form-group col-md-4">
               <label class="r">TOPPINGS</label><br>
-              <div>
-                <select class="form-control" data-dropup-auto="false" id="topp">
-                  <option>Topping</option>
-                  <option name="topping" value="100" class="topping">Mushrooms</option>
-                  <option name="topping" value="100" class="topping">Pineapple</option>
-                  <option name="topping" value="100" class="topping">Olives</option>
-                  <option name="topping" value="100" class="topping">Bell Peppers</option>
-                  <option name="topping" value="100" class="topping">Ham</option>
-                  <option name="topping" value="100" class="topping">Chicken Pieces</option>
-                </select>
+              <select id="filling" name='filling'>
+              <option value="None"> Topping</option>
+                <option value="mushroom" data-price="200">Mushroom</option>
+                <option value="pineapple" data-price="300">Pineapple</option>
+                <option value="olives" data-price="150">Olives</option>
+                <option value="bell pepper" data-price="180">Bell Pepper</option>
+                <option value="ham" data-price="300">Ham</option>
+                <option value="chicken pieces" data-price="250">Chicken Pieces</option>
+               
+
+            </select><br>
               </div>
             </div>
             <div class="form-group col-md-4">
               <label class="r" id="size">SIZE</label><br>
-              <select class="form-control" data-dropup-auto="false" id="size">
-                <option name="size" class="size" >Size</option>
-                <option name="size" class="size" value="small">Small</option>
-                <option name="size" class="size" value="medium">Medium</option>
-                <option name="size" class="size" value="large">Large</option>
-                <option name="size" class="size" value="X-large">X-Large</option>
-              </select><br>
+              
+              <label class='radiolabel'><input type="radio" name="selectedsize" value="small"
+                      data-price="500" />Small</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedsize" value="medium"
+                      data-price="800" />Medium</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedsize" value="large"
+                      data-price="1000" />Large</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedsize" value="X-large"
+                      data-price="1250" />X-large</label><br />
+              <br />
+              
             </div>
             <div class="form-group col-md-4">
               <label class="r">CRUST</label><br>
-              <select class="form-control" data-dropup-auto="false" id="crust">
-                <option class="select">Crust</option>
-                <option name="crust" class="crust" value="thin & crispy">Thin & Crispy. Kshs:150</option>
-                <option name="crust" class="crust" value="deep pan">Deep Pan. Kshs:170</option>
-                <option name="crust" class="crust" value="classic crust">Classic Crust. Kshs:100</option>
-                <option name="crust" class="crust" value="cheesy crust">Cheesy Crust. Kshs:200</option>
-                <option name="crust" class="crust" value="gluten free base">Gluten free base. Kshs:150</option>
-              </select><br>
+              
+              <label class='radiolabel'><input type="radio" name="selectedcrust" value="thin & crispy"
+                      data-price="50" />Thin & crispy</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedcrust" value="deep pan"
+                      data-price="100" />Deep pan</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedcrust" value="classic crust"
+                      data-price="300" />Classic crust</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedcrust" value="cheesy crust"
+                      data-price="400" />Cheesy crust</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedcrust" value="gluten free base"
+                      data-price="500" />Gluten Free base</label><br />
+              <br /> 
+
             </div>
            
            </form>
@@ -220,6 +228,11 @@
                       <label for="quantity" class="r">Quantity</label>
                       <input  class="form-control-lg" id="amount" placeholder="Enter number">
                     </div>
+                    <div class="row" id="tot">
+                      <div class="form-group col-md-4" id="total">
+                          <label for="quantity" class="r">Total</label>
+                          <input name="total" class="form-control-lg" id="total" placeholder="Total">
+                        </div>
                     
                     </div>
            </form>
@@ -230,14 +243,11 @@
           <div class="row" id="bttn" >
             <div class=" form-group col-md-4">
                 <div class="caption">
-              <button type="button" class="btn btn-primary" id="order"  onclick="order()">Order</button>
-            </div> </div>
-           
-          </form>
-         
-        </div>
-        <p id="show"></p>
-      </div>
+              <button type="button" class="btn btn-primary" id="order"  onclick="('idorder').style.display='block'">Order</button>
+            </div> 
+            </div>
+            </div>
+         </form>
 
       <div id="contacts">
         <h5><b>CONTACT US</b></h5>
@@ -285,6 +295,165 @@
         </div>
      </div>
     </div>
+    <script src="./js/jquery.js"></script>
+    <script src="js/script.js"></script>
   </body>
 
 </html>
+<!-- <body class="order">
+  <h1>HELLO HERE ARE OUR DEALERS </h1>
+  <div class="container-fluid">
+
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h2>ELITE GAS</h2>
+                      <p>We are located in KILIMANI</p>
+                      <p>We deal in all brands of Gas cylinders.</p>
+                      <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+                  </div>
+              </div>
+
+
+          </div> -->
+
+          <!-- <div class="col-md-4">
+              <div class="card">
+                  <h2>UWEZO GAS</h2>
+                  <p>We are located in GONGO R0AD opposite cleanshelf supermarket.</p>
+                  <p>We deal in all brands of Gas cylinders.</p>
+
+
+                  <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card">
+                  <h2>PARTY PARTY GAS</h2>
+                  <p>We are located in KAWANGWARE next magunas supermarket.</p>
+                  <p>We deal in all brands of Gas cylinders.</p>
+
+                  <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card"> -->
+                  <!-- <h2>CHINA GAS</h2>
+                  <p>We are located in JAMHURI near impala ground.</p>
+                  <p>We deal in all brands of Gas cylinders.</p>
+
+
+                  <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <h2>KING GAS</h2>
+                  <p>We are located in LOWER KABETE.</p>
+                  <p>We deal in all brands of Gas cylinders.</p>
+
+
+                  <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+              </div>
+          </div> -->
+          <!-- <div class="col-md-4">
+              <div class="card">
+                  <h2>QUEEN GAS</h2>
+                  <p>We are located in KIBRA.</p>
+                  <p>We deal in all brands of Gas cylinders.</p>
+
+
+                  <button onclick="document.getElementById('idorder').style.display='block'">ORDER</button>
+              </div>
+          </div>
+      </div>
+  </div>
+ -->
+
+
+
+  <!-- <div id="idorder" class="modal">
+      <button onclick="document.getElementById('idorder').style.display='none'" class="close"
+          title="Close Modal">&times;</button>
+      <form action="" id="gasform1" onsubmit="return false;">
+          <div class="gas-form-order">
+              <fieldset>
+                  <label>Enter location</label>
+                  <select id="location1" name='location' required><br><br>
+                      <option value="none">Select location</option>
+                      <option value="JAMUHURI">JAMHURI</option>
+                      <option value="KAWANGWARE">KAWANGWARE</option>
+                      <option value="LOWER KABETE">LOWER KABETE</option>
+                      <option value="NGONG ROAD">NGONG ROAD</option>
+                      <option v alue="KILIMANI">KILIMANI</option>
+                      <option value="KIBRA">KIBRA</option>
+                  </select>
+          </div><br> -->
+          ​
+          <!-- <fieldset>
+              <legend>Order Your gas</legend>
+              <label>Size of your gas</label><br>
+              <label class='radiolabel'><input type="radio" name="selectedgas" value="6kg"
+                      data-price="600" />6kg</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedgas" value="13kg"
+                      data-price="800" />13kg</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedgas" value="22kg"
+                      data-price="1800" />22kg</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedgas" value="50kg"
+                      data-price="2500" />50kg</label><br />
+              <br />
+
+
+              <label>Choose action</label><br>
+              <label class='radiolabel'><input type="radio" name="selectedoption" value="refill"
+                      data-price="50" />Refill</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedoption" value="swap"
+                      data-price="100" />Swap</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedoption" value="refill + swap"
+                      data-price="300" />Refill + Swap</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedoption" value="new cylinder"
+                      data-price="400" />New cylinder</label><br />
+              <label class='radiolabel'><input type="radio" name="selectedoption" value="new cylinder+ gas"
+                      data-price="500" />New cylinder + gas</label><br />
+              <br /> -->
+
+
+<!-- 
+              <label>gas Filling</label>
+              ​
+              <select id="filling" name='filling'>
+                  <option value="None">Select Filling</option>
+                  <option value="progas" data-price="200">Progas</option>
+                  <option value="k-gas" data-price="300">K-gas</option>
+                  <option value="hashi" data-price="150">Hashi</option>
+                  <option value="Afrigas" data-price="180">Afrigas</option>
+                  <option value="Oil libya" data-price="300">Oil libya</option>
+                  <option value="supa gas" data-price="250">supa gas</option>
+                  <option value="other" data-price="300">Other</option>
+
+              </select><br>
+              <label for='total'>Total price</label>
+              <input type="text" id="total" name='total' readonly="readonly" />
+              <br />
+
+              <div class="delivery-option">
+                  <button id="deliver">Deliver</button>
+
+              </div><br><br>
+          </fieldset>
+      </form>
+  </div>
+
+  <div class="footer">
+      <table border="0" width="100%" height="100%">
+          <tr> -->
+              <!-- <td><a href="index.html#home">BACK TO HOME</a></td>
+          </tr>
+  </div>
+</body>
+
+</html> -->
