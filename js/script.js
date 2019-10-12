@@ -22,7 +22,7 @@ $(document).ready(function(){
  $("#order").click(function(){
    var checkVal = $("input[name=Yes]:checked").val();
    if(checkVal === "yes") {
-     Amount = 1000;
+     Amount = 400;
      var getLocation = prompt("What is your location?");
      alert("Dear customer your order will be delivered at " +  getLocation  +  "  you will pay an extra 400 Ksh for delivery fee.");
    }
