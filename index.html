@@ -168,14 +168,14 @@
       </div>
     </div>
 
-    <div>
+    <div id="ords">
       <h4 class="o">ORDER</h4>
       <p class="ord"><b>Place your order below</b></p>
       <form>
         <div class="row" id="top">
           <div class="form-group col-md-4">
             <label class="r">TOPPINGS</label><br>
-            <select multiple required class="form-control" id="topping">
+            <select class="form-control" id="topping">
               <option>Topping</option>
               <option value="100">Pineapple Kshs:100</option>
               <option value="100">Olives Kshs:100</option>
@@ -185,11 +185,11 @@
               <option value="100">Chicken pieces Kshs:100</option> ​
             </select>
           </div>
-        </div>
+        
 
         <div class="form-group col-md-4">
-          <label for="">Size</label>
-          <select id="size">
+          <label  class="r"for="">Size</label>
+          <select id="size" class="form-control">
             <option>Size</option>
             <option value="500">Small Kshs:500</option>
             <option value="800">Medium Kshs:800</option>
@@ -210,11 +210,12 @@
             <option value="160" name="small">Gluten free base Kshs:160</option>
           </select>
         </div>
+      </div>
 
       </form>
-
-      <label>Select the number of pizzas you would like us to deliver.</label>
-      <select name="quantity" id="num">
+      <div class="form-group col-md-4">
+      <label class="sel">Select the number of pizzas you would like us to deliver.</label>
+      <select name="quantity" class="form-control" id="num">
         <option>Number</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -227,11 +228,12 @@
         <option value="9">9</option>
         <option value="10">10</option>
       </select>
+    </div>
       <br>
       <div class="pizza-deliver">
-        <p>Would you be interested in our delivery services?</p>
-        <label><input type="radio" name="Yes" value="yes" id="myRadio">Yes</label>
-        <label><input type="radio" name="Yes" value="no">No</label>
+        <p class="sel">Would you be interested in our delivery services?</p>
+        <label><input  type="radio" name="Yes" value="yes" id="myRadio">Yes</label>
+        <label><input  type="radio" name="Yes" value="no">No</label>
       </div>
 
       <div><button type="submit" class="btn btn-info submit" id="order">Order</button>
