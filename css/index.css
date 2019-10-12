@@ -105,6 +105,10 @@ h5{
 #tot{
   padding-right: 500px;
 }
+.sel{
+  color:rgb(160, 8, 8);
+  font-family: 'Cinzel', serif;
+}
 #contacts{
   color:rgb(160, 8, 8);
   font-family: 'Cinzel', serif;
@@ -120,6 +124,9 @@ h5{
 }
 .select{
   font-family: 'Cinzel', serif;   
+}
+#ords{
+  text-align: center;
 }
 
 .fa-facebook {
