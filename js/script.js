@@ -1,46 +1,47 @@
+// Carousel Interface
+$(document).ready(function(){
+  $('.carousel').carousel({
+    interval: 1000
+    })
+  });
 
-// $(document).ready(function(){
-//   $('.carousel').carousel({
-//     interval: 1000
-//     })
-//   });
-   //User //
-   
-   function updateTotal($form)
-   {
-      var total = 0;
-      var selectedsize = $form.find('input[name="selectedsize"]:checked').data('price');
-      if (!isNaN(selectedsize))
-      {
-          total += selectedsize;
-      }
-      var topping=$form.find('input[name="selectedtopping"]:selected').data('price');
-      if (!isNaN(selectedtopping))
-      {
-          total += selectedtopping;
-      }
-      var selectedcrust = $form.find('select[name="selectedcrust"] option:ckecked').data('price');
-      if (!isNaN(selectedcrust))
-      {
-          total += selectedcrust;
-      }
-      $form.find('input[name="total"]').val(total);
+
+
+//Business Interface
+function ShowSummary(getSize,getCrust,getToppings){                                                                                             
+    this.size = getSize;
+   this.crust = getCrust;
+    this.toppings = getToppings;
+}
+ShowSummary.prototype.totalSummary=function(){
+   return this.getsize + "" + this.getcrust + " " + this.getToppings;
+}
+var sizes= ["small", "medium", "large","x-large"]
+$(document).ready(function(){
+ var Amount = 0;
+ $("#order").click(function(){
+   var checkVal = $("input[name=Yes]:checked").val();
+   if(checkVal === "yes") {
+     Amount = 1000;
+     var getLocation = prompt("What is your location?");
+     alert("Your order will be delivered at " +  getLocation  +  "  you will pay an extra 400 Ksh for delivery fee.");
    }
-   $(document).ready(function() {
-      $('#sizeform1 input[name="selectedsize"]').change(function () {
-          var $form = $(this).closest('form');
-          updateTotal($form);
-      });
-      $('#toppingform1 input[name="selectedtopping"]').change(function (){
-          var $form= $(this).closest('form');
-          updateTotal($form);
-      });
-      $('#crustform1 select[name="selectedcrust"]').change(function () {
-          var $form = $(this).closest('form');
-          updateTotal($form);
-      });
-   
-      $("#deliver").click(function(){
-        alert("Your order will be delivered within 40min stay updated will deliver soon")
-      })
-   });
+ })
+
+ //User Interface
+ $("#order").click(function(){
+   var Size = parseFloat(document.getElementById("size").value);
+   var Crust = parseFloat(document.getElementById("crust").value);
+   var Topping = parseFloat(document.getElementById("topping").value);
+   var Quantity = parseFloat(document.getElementById("num").value);
+   var Total = ((Size + Crust + Topping) * Quantity + Amount);
+   alert("You will pay " + Total + " Ksh amount of money.")
+   document.getElementById("getsize").innerHTML = Size;
+   document.getElementById("getcrust").innerHTML = Crust;
+   document.getElementById("gettopping").innerHTML = Topping;
+   document.getElementById("sum").innerHTML = Total;
+   $(".the-order").show();
+  
+ });
+});
+                    
