@@ -8,13 +8,13 @@ $(document).ready(function(){
 
 
 //Business Interface
-function ShowSummary(getSize,getCrust,getToppings){                                                                                             
+function ShowSummary(getSize,getCrust,getTopping){                                                                                             
     this.size = getSize;
    this.crust = getCrust;
-    this.toppings = getToppings;
+    this.topping = getTopping;
 }
 ShowSummary.prototype.totalSummary=function(){
-   return this.getsize + "" + this.getcrust + " " + this.getToppings;
+   return this.getsize + "" + this.getcrust + " " + this.getTopping;
 }
 var sizes= ["small", "medium", "large","x-large"]
 $(document).ready(function(){
@@ -24,7 +24,7 @@ $(document).ready(function(){
    if(checkVal === "yes") {
      Amount = 1000;
      var getLocation = prompt("What is your location?");
-     alert("Your order will be delivered at " +  getLocation  +  "  you will pay an extra 400 Ksh for delivery fee.");
+     alert("Dear customer your order will be delivered at " +  getLocation  +  "  you will pay an extra 400 Ksh for delivery fee.");
    }
  })
 
